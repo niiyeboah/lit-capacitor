@@ -1,4 +1,9 @@
 {
+  "name": "lit-capacitor",
+  "version": "0.0.0",
+  "description": "--description--",
+  "author": "--username-- <--usermail-->",
+  "license": "MIT",
   "scripts": {
     "lint:eslint": "eslint --ext .ts,.html . --ignore-path .gitignore",
     "format:eslint": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
@@ -12,6 +17,14 @@
     "start:ios": "cap open ios",
     "start": "concurrently --kill-others --names tsc,es-dev-server \"npm run tsc:watch\" \"es-dev-server --app-index index.html --node-resolve --open --watch\"",
     "tsc:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@capacitor/android": "^2.2.1",
+    "@capacitor/cli": "^2.2.1",
+    "@capacitor/core": "^2.2.1",
+    "@capacitor/ios": "^2.2.1",
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
@@ -53,18 +66,5 @@
       "prettier --write",
       "git add"
     ]
-  },
-  "name": "lit-capacitor",
-  "version": "0.0.0",
-  "description": "Webcomponent lit-capacitor following open-wc recommendations",
-  "author": "lit-capacitor",
-  "license": "MIT",
-  "dependencies": {
-    "@capacitor/android": "^2.2.1",
-    "@capacitor/cli": "^2.2.1",
-    "@capacitor/core": "^2.2.1",
-    "@capacitor/ios": "^2.2.1",
-    "lit-element": "^2.0.1",
-    "lit-html": "^1.0.0"
   }
 }

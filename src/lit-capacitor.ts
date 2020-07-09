@@ -1,5 +1,9 @@
-import { LitElement, html, css, property } from 'lit-element';
+import { LitElement, customElement, html, css, property } from 'lit-element';
 
+/**
+ * `lit-capacitor` --description--
+ */
+@customElement('lit-capacitor')
 export class LitCapacitor extends LitElement {
   @property({ type: String }) page = 'main';
 
@@ -64,4 +68,8 @@ export class LitCapacitor extends LitElement {
   }
 }
 
-customElements.define('lit-capacitor', LitCapacitor);
+declare global {
+  interface HTMLElementTagNameMap {
+    'lit-capacitor': LitCapacitor;
+  }
+}
