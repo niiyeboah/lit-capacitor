@@ -16,7 +16,8 @@
     "start:android": "cap open android",
     "start:ios": "cap open ios",
     "start": "concurrently --kill-others --names tsc,es-dev-server \"npm run tsc:watch\" \"es-dev-server --app-index index.html --node-resolve --open --watch\"",
-    "tsc:watch": "tsc --watch"
+    "tsc:watch": "tsc --watch",
+    "postinstall": "node util/init.js"
   },
   "dependencies": {
     "@capacitor/android": "^2.2.1",
@@ -27,22 +28,27 @@
     "lit-html": "^1.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "@open-wc/building-rollup": "^1.0.0",
     "@open-wc/eslint-config": "^2.0.0",
+    "@types/node": "13.11.1",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
-    "prettier": "^2.0.4",
+    "colors": "^1.4.0",
+    "concurrently": "^5.1.0",
+    "es-dev-server": "^1.5.0",
+    "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.11.0",
     "husky": "^1.0.0",
     "lint-staged": "^8.0.0",
-    "@open-wc/building-rollup": "^1.0.0",
+    "path": "^0.12.7",
+    "prettier": "^2.0.4",
+    "prompt": "^1.0.0",
+    "replace-in-file": "^6.1.0",
     "rimraf": "^2.6.3",
     "rollup": "^2.3.4",
-    "@types/node": "13.11.1",
-    "es-dev-server": "^1.5.0",
-    "typescript": "~3.8.2",
-    "concurrently": "^5.1.0",
-    "tslib": "^1.11.0"
+    "shelljs": "^0.8.4",
+    "tslib": "^1.11.0",
+    "typescript": "~3.8.2"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +59,8 @@
   "prettier": {
     "singleQuote": true,
     "arrowParens": "avoid",
-    "trailingComma": "none"
+    "trailingComma": "none",
+    "printWidth": 120
   },
   "husky": {
     "hooks": {

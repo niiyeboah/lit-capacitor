@@ -4,6 +4,8 @@
 
 Starter template for cross-platform (iOS/Android/Web) app built with [LitElement](https://lit-element.polymer-project.org/), [Capacitor](https://capacitorjs.com/) and [TypeScript](https://www.typescriptlang.org/).
 
+**Run `npm install` and follow the prompts to setup the workspace.**
+
 ## Scripts
 
 - `start` runs app for development, reloading on file changes
@@ -16,5 +18,5 @@ Starter template for cross-platform (iOS/Android/Web) app built with [LitElement
 
 ## References
 
-- [open-wc](https://github.com/open-wc)
-- [capacitor](https://github.com/ionic-team/capacitor)
+- [Open Web Component Recommendations](https://github.com/open-wc/open-wc)
+- [Capacitor](https://github.com/ionic-team/capacitor)
