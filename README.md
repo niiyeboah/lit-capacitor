@@ -1,6 +1,6 @@
 # Lit Capacitor
 
-![LitElement + Capacitor](https://user-images.githubusercontent.com/3392815/87056419-43bcd180-c20e-11ea-8369-9f316318b78a.png)
+![LitElement + Capacitor](https://user-images.githubusercontent.com/3392815/87149383-c4d0a300-c2b8-11ea-9b35-f8ef993f8f80.png)
 
 Starter template for cross-platform (iOS/Android/Web) app built with [LitElement](https://lit-element.polymer-project.org/), [Capacitor](https://capacitorjs.com/) and [TypeScript](https://www.typescriptlang.org/).
 
